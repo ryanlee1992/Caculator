@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+</head>
+<body>
+	<form action="Result.php" method='POST' target="main">
+		<table>
+			<tr>
+				<td>
+					<label for="num1">操作数1</label><input type="text" name="numA" id="num1">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<select name='sign'>
+						<option value="+">+</option>
+						<option value="-">_</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="num2">操作数2</label><input type="text" name="numB" id="num2">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="submit" value="计算">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="reset" value="MC">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name='main'></iframe>
+</body>
+</html>
